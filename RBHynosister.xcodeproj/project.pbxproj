@@ -13,6 +13,7 @@
 		1F4113AB16BC730B00DAEF91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F4113A916BC730B00DAEF91 /* InfoPlist.strings */; };
 		1F4113AD16BC730B00DAEF91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4113AC16BC730B00DAEF91 /* main.m */; };
 		1F4113B116BC730B00DAEF91 /* RBHynosisterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4113B016BC730B00DAEF91 /* RBHynosisterAppDelegate.m */; };
+		1F4113B916BC92E800DAEF91 /* RBHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4113B816BC92E800DAEF91 /* RBHypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		1F4113A016BC730B00DAEF91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F4113A216BC730B00DAEF91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F4113A416BC730B00DAEF91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1F4113A816BC730B00DAEF91 /* RBHynosister-Info.plist */ = {isa = PBXFileReference; path = "RBHynosister-Info.plist"; sourceTree = "<group>"; };
+		1F4113A816BC730B00DAEF91 /* RBHynosister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBHynosister-Info.plist"; sourceTree = "<group>"; };
 		1F4113AA16BC730B00DAEF91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F4113AC16BC730B00DAEF91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F4113AE16BC730B00DAEF91 /* RBHynosister-Prefix.pch */ = {isa = PBXFileReference; path = "RBHynosister-Prefix.pch"; sourceTree = "<group>"; };
-		1F4113AF16BC730B00DAEF91 /* RBHynosisterAppDelegate.h */ = {isa = PBXFileReference; path = RBHynosisterAppDelegate.h; sourceTree = "<group>"; };
+		1F4113AE16BC730B00DAEF91 /* RBHynosister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RBHynosister-Prefix.pch"; sourceTree = "<group>"; };
+		1F4113AF16BC730B00DAEF91 /* RBHynosisterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBHynosisterAppDelegate.h; sourceTree = "<group>"; };
 		1F4113B016BC730B00DAEF91 /* RBHynosisterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBHynosisterAppDelegate.m; sourceTree = "<group>"; };
+		1F4113B716BC92E800DAEF91 /* RBHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBHypnosisView.h; sourceTree = "<group>"; };
+		1F4113B816BC92E800DAEF91 /* RBHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBHypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			children = (
 				1F4113AF16BC730B00DAEF91 /* RBHynosisterAppDelegate.h */,
 				1F4113B016BC730B00DAEF91 /* RBHynosisterAppDelegate.m */,
+				1F4113B716BC92E800DAEF91 /* RBHypnosisView.h */,
+				1F4113B816BC92E800DAEF91 /* RBHypnosisView.m */,
 				1F4113A716BC730B00DAEF91 /* Supporting Files */,
 			);
 			path = RBHynosister;
@@ -117,7 +122,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "France Telecom Group (Orange) San Francisco";
+				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = 1F41139616BC730B00DAEF91 /* Build configuration list for PBXProject "RBHynosister" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -154,6 +159,7 @@
 			files = (
 				1F4113AD16BC730B00DAEF91 /* main.m in Sources */,
 				1F4113B116BC730B00DAEF91 /* RBHynosisterAppDelegate.m in Sources */,
+				1F4113B916BC92E800DAEF91 /* RBHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

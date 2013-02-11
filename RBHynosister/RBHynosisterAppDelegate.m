@@ -2,11 +2,10 @@
 //  RBHynosisterAppDelegate.m
 //  RBHynosister
 //
-//  Created by Rashmi Bajaj on 2/1/13.
-//  Copyright (c) 2013 France Telecom Group (Orange) San Francisco. All rights reserved.
-//
+
 
 #import "RBHynosisterAppDelegate.h"
+#import "RBHypnosisView.h"
 
 @implementation RBHynosisterAppDelegate
 
@@ -15,7 +14,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    //CGRect viewFrame = CGRectMake(160, 240, 100, 150);
+    RBHypnosisView *view = [[RBHypnosisView alloc] initWithFrame:[[self window] bounds]];
+   // [view setBackgroundColor:[UIColor redColor]];
+    [[self window] addSubview:view];
+    
+    BOOL success = [view becomeFirstResponder];
+    if (success) {
+        NSLog(@"HypnosisView became the first responder");
+    }
+    else
+    {
+        NSLog(@"Could not become first responder");
+    }
+    
+       
+    //CGRect anotherFrame = CGRectMake(20, 30, 50, 50);
+    //RBHypnosisView *anotherView = [[RBHypnosisView alloc] initWithFrame:anotherFrame];
+   // [anotherView setBackgroundColor:[UIColor blueColor]];
+    //[view addSubview:anotherView];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
